@@ -1,8 +1,7 @@
 import React from 'react';
-import { AppBar, Toolbar, Box, Typography, IconButton, Container, Tooltip, Avatar } from '@mui/material';
+import { AppBar, Toolbar, Box, Typography, IconButton, Container, Tooltip } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
-import CodeIcon from '@mui/icons-material/Code';
 import { useAppTheme } from '../context/ThemeContext';
 
 export const Navbar: React.FC = () => {
@@ -25,7 +24,7 @@ export const Navbar: React.FC = () => {
         <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between', py: 1 }}>
           {/* Left Brand */}
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
-         
+
             <Typography variant="h6" sx={{ fontWeight: 800, letterSpacing: -0.5 }}>
               Rishikesh Pal
             </Typography>

@@ -42,8 +42,14 @@ export const Experience: React.FC = () => (
         <Card key={idx} variant="outlined">
           <CardContent>
             <Box sx={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', mb: 1 }}>
-              <Typography variant="h6" fontWeight="bold">
-                {exp.role} · <Typography component="span" color="primary.main" fontWeight="bold">{exp.company}</Typography>
+              <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                {exp.role} ·{' '}
+                <Box
+                  component="span"
+                  sx={{ color: 'primary.main', fontWeight: 'bold' }}
+                >
+                  {exp.company}
+                </Box>
               </Typography>
               <Chip label={exp.period} size="small" variant="outlined" />
             </Box>

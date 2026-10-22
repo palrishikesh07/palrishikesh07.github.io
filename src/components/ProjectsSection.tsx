@@ -26,12 +26,16 @@ export const ProjectsSection: React.FC = () => (
     </Typography>
     <Grid container spacing={3}>
       {projects.map((proj, idx) => (
-        <Grid item xs={12} sm={6} key={idx}>
+        <Grid size={{ xs: 12, sm: 6 }} key={idx}>
           <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
             <CardContent sx={{ flexGrow: 1, p: 3 }}>
               <Typography variant="h6" sx={{ mb: 1, fontWeight: 700 }}>{proj.title}</Typography>
               <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>{proj.desc}</Typography>
-              <Stack direction="row" spacing={1} flexWrap="wrap" gap={0.5}>
+              <Stack
+                direction="row"
+                spacing={1}
+                sx={{ flexWrap: 'wrap', gap: 0.5 }}
+              >
                 {proj.tags.map(t => <Chip key={t} label={t} size="small" sx={{ borderRadius: 1.5 }} />)}
               </Stack>
             </CardContent>

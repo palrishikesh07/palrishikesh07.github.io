@@ -64,7 +64,12 @@ export const HeroSection: React.FC = () => {
             }}
           />
           <Stack spacing={1}>
-            <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
+            <Stack
+              direction="row"
+              spacing={1}
+              useFlexGap
+              sx={{ mb: 4, flexWrap: 'wrap' }}
+            >
               <Chip
                 icon={<Box sx={{ width: 8, height: 8, borderRadius: '50%', bgcolor: '#10b981', mr: 0.5 }} />}
                 label="AVAILABLE FOR WORK"
@@ -145,7 +150,12 @@ export const HeroSection: React.FC = () => {
         </Typography>
 
         {/* Skill Pills */}
-        <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap sx={{ mb: 4 }}>
+        <Stack
+          direction="row"
+          spacing={1}
+          useFlexGap
+          sx={{ mb: 4, flexWrap: 'wrap' }}
+        >
           {heroSkills.map((tech) => (
             <Chip
               key={tech}
@@ -164,7 +174,12 @@ export const HeroSection: React.FC = () => {
         </Stack>
 
         {/* Buttons */}
-        <Stack direction="row" spacing={1.5} flexWrap="wrap" useFlexGap>
+        <Stack
+          direction="row"
+          spacing={1.5}
+          useFlexGap
+          sx={{ flexWrap: 'wrap' }}
+        >
           <Button
             variant="contained"
             onClick={handleDownload}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Chip, Paper } from '@mui/material';
+import { Box, Chip, Paper } from '@mui/material';
 
 const skills = [
   'Node.js', 'React.js', 'TypeScript', 'Next.js', 'Python', 'FastAPI',

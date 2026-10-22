@@ -7,7 +7,7 @@ export const AboutSection: React.FC = () => (
       About Me
     </Typography>
     <Grid container spacing={3}>
-      <Grid item xs={12} sm={4}>
+      <Grid size={{ xs: 12, sm: 4 }}>
         <Card sx={{ textAlign: 'center', p: 2 }}>
           <CardContent>
             <Typography variant="h4" color="primary.main" sx={{ fontWeight: 800 }}>10+</Typography>
@@ -15,7 +15,7 @@ export const AboutSection: React.FC = () => (
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xs={12} sm={4}>
+      <Grid size={{ xs: 12, sm: 4 }}>
         <Card sx={{ textAlign: 'center', p: 2 }}>
           <CardContent>
             <Typography variant="h4" color="secondary.main" sx={{ fontWeight: 800 }}>6+</Typography>
@@ -23,7 +23,7 @@ export const AboutSection: React.FC = () => (
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xs={12} sm={4}>
+      <Grid size={{ xs: 12, sm: 4 }}>
         <Card sx={{ textAlign: 'center', p: 2 }}>
           <CardContent>
             <Typography variant="h4" color="primary.main" sx={{ fontWeight: 800 }}>AWS & Kafka</Typography>
