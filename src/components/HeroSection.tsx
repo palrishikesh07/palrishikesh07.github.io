@@ -18,7 +18,7 @@ import { CodeCard } from './CodeCard';
 import { useAppTheme } from '../context/ThemeContext';
 import profileImg from '../assets/Rishi_profile.png'; // Direct static import
 
-const heroSkills = ['Node.js', 'React.js', 'TypeScript', 'AWS', 'Kafka', 'MongoDB', 'Redis'];
+// const heroSkills = ['Node.js', 'React.js', 'TypeScript', 'AWS', 'Kafka', 'MongoDB', 'Redis'];
 
 export const HeroSection: React.FC = () => {
   const [loading, setLoading] = useState(false);
@@ -54,13 +54,13 @@ export const HeroSection: React.FC = () => {
           <Avatar
             src={profileImg}
             alt="Rishikesh Pal"
-            variant="rounded" // Recommended when width and height are different (rectangular portrait)
+            variant="rounded"
             sx={{
-              width: { xs: 80, sm: 100 },
-              height: { xs: 96, sm: 120 },
-              borderRadius: '20px',
-              border: '3px solid #0284c7',
-              boxShadow: '0 8px 24px rgba(2, 132, 199, 0.25)',
+              width: { xs: 120, sm: 150 },
+              height: { xs: 144, sm: 180 },
+              borderRadius: '13px',
+              border: '2px solid #0284c7',
+              boxShadow: '6px 9px 20px rgba(2, 132, 199, 0.25)',
             }}
           />
           <Stack spacing={1}>
@@ -96,7 +96,7 @@ export const HeroSection: React.FC = () => {
               />
             </Stack>
             <Typography variant="caption" sx={{ color: 'text.secondary', fontWeight: 600 }}>
-              Bangalore, India • 10+ Years Experience[cite: 4]
+              Bangalore, India • 10+ Years Experience
             </Typography>
           </Stack>
         </Box>
@@ -105,9 +105,9 @@ export const HeroSection: React.FC = () => {
         <Typography
           variant="h2"
           sx={{
-            fontWeight: 900,
-            fontSize: { xs: '2.4rem', sm: '3.2rem', lg: '3.6rem' },
-            lineHeight: 1.15,
+            fontWeight: 600,
+            fontSize: { xs: '2.2rem', sm: '3rem', lg: '3.1rem' },
+            lineHeight: 1.10,
             mb: 1.5,
             letterSpacing: '-0.03em',
             color: 'text.primary',
@@ -122,7 +122,7 @@ export const HeroSection: React.FC = () => {
               WebkitTextFillColor: 'transparent',
             }}
           >
-            Rishikesh
+            Rishikesh Pal
           </Box>
         </Typography>
 
@@ -146,11 +146,11 @@ export const HeroSection: React.FC = () => {
         >
           <strong>Lead Technology & Senior Full Stack Engineer</strong> with 10+ years of experience
           crafting event-driven microservices (Kafka, Redis), AWS serverless backends, and high-performance
-          React web applications[cite: 4].
+          React web applications.
         </Typography>
 
         {/* Skill Pills */}
-        <Stack
+        {/* <Stack
           direction="row"
           spacing={1}
           useFlexGap
@@ -171,7 +171,7 @@ export const HeroSection: React.FC = () => {
               }}
             />
           ))}
-        </Stack>
+        </Stack> */}
 
         {/* Buttons */}
         <Stack
