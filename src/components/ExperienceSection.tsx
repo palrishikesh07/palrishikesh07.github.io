@@ -131,12 +131,11 @@ export const ExperienceSection: React.FC = () => (
                       <FiberManualRecordIcon sx={{ fontSize: 9, color: 'primary.main' }} />
                     </ListItemIcon>
                     <ListItemText
-                      primary={item}
-                      primaryTypographyProps={{
-                        variant: 'body2',
-                        color: 'text.secondary',
-                        lineHeight: 1.7,
-                      }}
+                      primary={
+                        <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.7 }}>
+                          {item}
+                        </Typography>
+                      }
                       sx={{ m: 0 }}
                     />
                   </ListItem>
