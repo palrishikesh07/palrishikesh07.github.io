@@ -51,19 +51,46 @@ export const HeroSection: React.FC = () => {
       {/* LEFT COLUMN: Photo, Intro, Badges, Tech Pills, Buttons */}
       <Box sx={{ flex: 1, maxWidth: { xs: '100%', md: '56%' } }}>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 3 }}>
-          <Avatar
-            src={profileImg}
-            alt="Rishikesh Pal"
-            variant="rounded"
-            sx={{
-              width: { xs: 120, sm: 150 },
-              height: { xs: 144, sm: 180 },
-              borderRadius: '13px',
-              border: '2px solid #0284c7',
-              boxShadow: '6px 9px 20px rgba(2, 132, 199, 0.25)',
-            }}
-          />
-          <Stack spacing={1}>
+       <Box
+  sx={{
+    position: 'relative',
+    width: { xs: 120, sm: 150 },
+    height: { xs: 144, sm: 180 },
+    borderRadius: '16px',
+    padding: '3px', // Width of the animated border
+    overflow: 'hidden',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    boxShadow: '0 8px 25px rgba(236, 72, 153, 0.25), 0 8px 25px rgba(2, 132, 199, 0.25)',
+    // Animated rotating gradient pseudo-element
+    '&::before': {
+      content: '""',
+      position: 'absolute',
+      width: '200%',
+      height: '200%',
+      background: 'conic-gradient(from 0deg, #0284c7, #ec4899, #f43f5e, #0284c7)',
+      animation: 'spinBorder 4s linear infinite',
+      '@keyframes spinBorder': {
+        '0%': { transform: 'rotate(0deg)' },
+        '100%': { transform: 'rotate(360deg)' },
+      },
+    },
+  }}
+>
+  <Avatar
+    src={profileImg}
+    alt="Rishikesh Pal"
+    variant="rounded"
+    sx={{
+      width: '100%',
+      height: '100%',
+      borderRadius: '13px',
+      position: 'relative',
+      zIndex: 1,
+    }}
+  />
+</Box>   <Stack spacing={1}>
             <Stack
               direction="row"
               spacing={1}
@@ -144,7 +171,7 @@ export const HeroSection: React.FC = () => {
             mb: 3,
           }}
         >
-          <strong>Lead Technology & Senior Full Stack Engineer</strong> with 10+ years of experience
+          <strong>Senior MERN Stack Developer and Senior Software Engineer</strong> with 10+ years of experience
           crafting event-driven microservices (Kafka, Redis), AWS serverless backends, and high-performance
           React web applications.
         </Typography>

@@ -4,17 +4,17 @@ import { Box, Typography, Grid, Card, CardContent, Stack, Chip } from '@mui/mate
 const projects = [
   {
     title: 'ENBD Enterprise Banking',
-    desc: 'Built scalable REST APIs for enterprise banking, implementing Kafka event processing and Redis caching[cite: 5].',
+    desc: 'Built scalable REST APIs for enterprise banking, implementing Kafka event processing and Redis caching.',
     tags: ['Node.js', 'Kafka', 'Redis', 'Next.js']
   },
   {
     title: 'Goalster Serverless Platform',
-    desc: 'Designed AWS serverless application architecture with FastAPI and Node.js, boosting performance by 40%[cite: 5].',
+    desc: 'Designed AWS serverless application architecture with FastAPI and Node.js, boosting performance by 40%.',
     tags: ['FastAPI', 'AWS Lambda', 'MySQL', 'React.js']
   },
   {
     title: 'StayVista Booking System',
-    desc: 'Optimized property search APIs from 5 seconds to under 1 second using Elasticsearch and Redis[cite: 5].',
+    desc: 'Optimized property search APIs from 5 seconds to under 1 second using Elasticsearch and Redis.',
     tags: ['Elasticsearch', 'Redis', 'Node.js', 'MySQL']
   }
 ];
